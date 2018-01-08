@@ -11,5 +11,13 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.styles([
+    'resources/assets/front/bower_components/bootstrap/dist/css/bootstrap.min.css',
+    'resources/assets/front/css/style.css'
+], 'public/css/front.css');
+
+mix.scripts([
+    'resources/assets/front/bower_components/jquery/dist/jquery.min.js',
+    'resources/assets/front/bower_components/bootstrap/dist/js/bootstrap.min.js',
+    'resources/assets/front/js/scripts.js'
+], 'public/js/front.js');

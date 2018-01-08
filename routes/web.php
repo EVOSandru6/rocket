@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'MapController@index');
+
+Route::get('tweets', 'TweetsController@list');
+Route::get('tweets/store', 'TweetsController@store');
+
+Route::prefix('api')->group(function ()
+{
+    Route::get('/tweets', 'TweetsController@rest');
 });

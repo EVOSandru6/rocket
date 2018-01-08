@@ -12,3 +12,4 @@ yarn-error.log
 .env
 
 !/public/storage/database.sqlite
+**/bower_components
