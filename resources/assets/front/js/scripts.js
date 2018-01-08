@@ -50,7 +50,7 @@ function searchTweetsApi(params)
     $.ajax({
         url: '/api/tweets',
         type: 'get',
-        // data: params,
+        data: params,
         success: function(resp)
         {
             draw(resp.statuses, function(arr)

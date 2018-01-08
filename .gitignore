@@ -11,5 +11,7 @@ npm-debug.log
 yarn-error.log
 .env
 
-!/public/storage/database.sqlite
 **/bower_components
+
+
+#!/public/storage/database.sqlite
